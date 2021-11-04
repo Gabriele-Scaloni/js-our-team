@@ -1,10 +1,3 @@
- /*  const img = document.createElement("img");
-    img.src = "img/angela-caroll-chief-editor.jpg";
-    document.body.appendChild(img);  */
-
-
-    
-
     var profili = [
 
 {
@@ -33,10 +26,23 @@
 }
 ];
 
-console.log(profili);
+//per aggiungere oggetti nell'array profili
+let nuovoMembro = {
+    "foto" :  "img/new-team-member-01.jpg",
+    "nome" : "Barbara Ramos",
+    "professione" : "web developer"
+}
 
-for (let i = 0; i < profili.length; i++){
+profili.push(nuovoMembro);
+
+console.log(profili);
+ 
+ for (let i = 0; i < profili.length; i++){
     let objProfilo = profili[i];
+    let objFoto = foto[i];
+    let objNome = nome[i];
+    let objProfessione = professione[i];
+    
 
     console.log(objProfilo);
 
@@ -44,29 +50,14 @@ for (let i = 0; i < profili.length; i++){
         console.log(key, objProfilo[key]);
     }
 
-}
+} 
+
 
 var img = document.createElement("img"); 
   
-    img.src = "img/wayne-barnett-founder-ceo.jpg"; 
-    var src = document.getElementById("add-member");
-     
-    src.appendChild(img);  
-
-    console.log(img);
-
+img.src = "img/wayne-barnett-founder-ceo.jpg"; 
+var src = document.getElementById("add-member");
     
-/* var img = document.createElement("img");
-img.src = "barbara-ramos-graphic-designer.jpg";
- */
+src.appendChild(img);  
 
-/* var img1 = new pictures();
-img1.src = "img1.jpg";
-images.push(img1);
-var img2 = new pictures();
-img2.src = "img2.jpg";
-images.push(img2);
-var barbararamosgraphicdesigner=new pictures();
-barbararamosgraphicdesigner.src = "img/barbara-ramos-graphic-designer.jpg";
-images.push(barbararamosgraphicdesigner);
-var img = document.getElementById("barbara-ramos-graphic-designer.jpg"); */
+console.log(img);
